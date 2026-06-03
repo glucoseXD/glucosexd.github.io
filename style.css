@@ -142,7 +142,7 @@ body {
 }
 
 #technology-comparison {
-    font-size: small;
+    font-size: medium;
     margin: 0.5em;
 }
 
@@ -163,7 +163,7 @@ h5 {
 
 p {
     line-height: 1.4;
-    font-size: small;
+    font-size: medium;
 }
 
 a {
