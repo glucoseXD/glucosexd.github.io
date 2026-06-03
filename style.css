@@ -1,0 +1,171 @@
+/* ---------------------------------- Reset --------------------------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*:not(dialog) {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* ---------------------------------- Theme --------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --bg-dark: #1a1b26;
+    --bg-main: #16161e;
+    --bg-highlight: #292e42;
+    --bg-search: #3b4261;
+
+    --text-main: #c0caf5;
+    --text-muted: #a9b1d6;
+    --text-dark: #565f89;
+
+    --accent-blue: #7aa2f7;
+    --accent-cyan: #7dcfff;
+    --accent-purple: #bb9af7;
+    --accent-green: #9ece6a;
+    --accent-orange: #ff9e64;
+    --accent-red: #f7768e;
+    --accent-yellow: #e0af68;
+
+    --border-color: #414868;
+    --shadow-main: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+/* ---------------------------------- Hero ---------------------------------- */
+
+#introduction {
+    margin: 1em;
+    padding: 1em;
+
+    text-align: center;
+    font-family: "Fraunces", serif;
+}
+
+#introduction_greeting {
+    margin: 0;
+    padding: 0;
+
+    font-weight: 300;
+    font-size: large;
+}
+
+#introduction_greeting::after {
+    content: "\A";
+    white-space: pre;
+}
+
+#introduction_name {
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    font-size: xx-large;
+}
+
+/* --------------------------------- Topics --------------------------------- */
+
+.topic {
+    border-radius: 25px;
+    padding: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.topic_title {
+    font-style: italic;
+    margin-bottom: 0.4em;
+}
+
+#technology-comparison {
+    font-size: small;
+    margin: 0.5em;
+}
+
+#technology-comparison li::marker {
+    content: ">_  ";
+}
+
+/* ------------------------------- Typography ------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+}
+
+p {
+    line-height: 1.4;
+    font-size: small;
+}
+
+a {
+    color: var(--accent-purple);
+}
